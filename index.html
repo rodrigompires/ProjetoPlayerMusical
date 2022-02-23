@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rodrigo Moraes Pires">
+    <meta name="description" content="Projeto de um player musical com gifs animados">
+    <meta name="keywords" content="html5, css, javascript,tecnologia">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">    
+    <script src="https://kit.fontawesome.com/91e0be7ef6.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#">
+
+    <title>Projeto Player de Música</title>
+</head>
+<body>
+    <h1 id="descricao">Projeto Player de Música</h1>
+    <div id="container">
+        <div id="inicio">
+            <div id="estiloMusica">teste</div> 
+            <i class="fa-solid fa-music"></i>  
+        </div> 
+
+        <img src="Imagens/Marvin Gaye.jpg" alt="">
+
+        <div id="informacao">
+            <h2 id="titulo">Nome da musica</h2>
+            <p id="artista">Nome do artista</p>
+        </div>
+
+        <div id="barra">
+            <progress id="prog" value="0.0" max="1"></progress>
+            <div id="ponto"></div>
+        </div>
+
+        <div id="tempo">
+            <p id="tempoinicio">0:00</p>
+            <p id="tempofim">5:00</p>
+        </div>
+
+        <div id="player">
+            <i class="fa-solid fa-backward icon" id="anterior"></i>
+            <i class="fa-solid fa-play icon" id="play"></i>
+            <i class="fa-solid fa-pause icon" id="pause"></i>
+            <i class="fa-solid fa-forward icon" id="proxima"></i>
+        </div>
+
+        <audio src="Musicas/Distant Lover - Marvin Gaye.mp3" id="musica"></audio>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

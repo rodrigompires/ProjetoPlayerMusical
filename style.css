@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'minha fonte';
+    src:url("Fonte/Praktika-Light.otf");
+ }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'minha fonte' ,'Lato', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(35,29,31,.9);
+}
+
+#inicio {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(238, 222, 222);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+#descricao {
+    color: white;
+    margin: 20px;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#container {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgb(97, 96, 96);
+    background-color: rgba(35,29,31,.8);
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 3px;
+    margin-top: 15px;
+
+}
+
+#informacao {
+    width: 300px;
+    color: white;
+
+}
+
+#titulo {
+    margin-bottom: -5px;
+}
+
+#artista {
+    font-style: italic;
+}
+
+#barra {
+    margin-top: 20px;
+    border: 1px solid gray;
+    height: 5px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;   
+}
+
+#prog {
+   width: 0%;
+   height: 5px;
+
+}
+
+#ponto {
+    height: 15px;
+    width: 15px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    margin-left: -2px;
+    cursor: pointer;
+    
+}
+
+#tempo {
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+
+}
+
+#player {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    color: aliceblue;
+    font-size: 2em;
+    align-items: center;
+    
+    
+}
+
+.fa-pause {
+    display: none;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: gray;
+}
+
+
+
+
+@media screen and (min-width: 700px) {
+    body {
+        background-size: 300% 300%;
+        animation: gradiente 5s linear infinite alternate; 
+        background-image: linear-gradient(300deg,#222831, #393E46, #3D84A8, #fc4545);
+        
+    }
+
+
+      @keyframes gradiente {
+        0%{
+            background-position: 0% 50%;           
+        }
+
+        50%{
+            background-position: 100% 50%;
+        }
+
+        100%{
+            background-position: 0% 50%;
+        }
+    }
+
+   
+}
+
+@media screen and (min-width: 1275px) {
+    body {
+        background-size: 400% 400%;
+        animation: gradiente 5s linear infinite alternate; 
+        background-image: linear-gradient(50deg,#EE7752, #E73C7E, #23A6D5, #23D5AB); 
+    }
+
+    #descricao {
+        letter-spacing: 1em;
+        font-size: 1.5em;
+    }
+
+    #container {
+        width: 70vw;   
+        text-align: center;
+        box-shadow: 10px 10px 50px rgb(97, 96, 96);
+        border: none;
+    }
+
+    #informacao {
+        width: 70vw;
+        letter-spacing: 1em;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    #barra {
+        width: 100%;
+    }
+
+    #tempoinicio, #tempofim {
+        font-size: 1.5em;
+    }
+
+    #player {
+        margin-top: -20px;
+        font-size: 3em;
+    }
+
+    .fa-solid:hover {
+       color: rgb(25, 129, 143);
+    }
+
+    #inicio {
+        justify-content: space-around;
+        font-size: 1.5em;
+        
+    }
+
+   
+    @keyframes gradiente {
+        0%{
+            background-position: 0% 50%;           
+        }
+
+        50%{
+            background-position: 100% 50%;
+        }
+
+        100%{
+            background-position: 0% 50%;
+        }
+    }
+
+   
+}
